@@ -6,13 +6,23 @@ jquery.tokko.js works great with [jQuery.LocalScroll](http://flesler.blogspot.fi
 
 h1's are excluded out of the TOC by design. If you think otherwise or have any other development ideas, use the [issue tracker](https://github.com/bebraw/jquery.tokko.js).
 
-## Project using jquery.tokko.js
+## Projects using jquery.tokko.js
 
 * [Yes We Jekyll](http://yeswejekyll.com)
 
 ## Acknowledgments
 
-Big thanks to [mieky](https://github.com/mieky) for coming up with a name.
+* [mieky](https://github.com/mieky) came up with the name
+* [nikcorg](https://github.com/nikcorg) added CSS transitions
+
+## Placeholder
+
+This is just some placeholder to make the demo more effective.
+
+<img src="http://placekitten.com/g/200/300" alt="Just some cat image" />
+
+
+<img src="http://placekitten.com/g/300/300" alt="Another cat image" />
 
 ## License
 
