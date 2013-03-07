@@ -1,5 +1,5 @@
 {
   "name": "jquery.tokko.js",
   "version": "0.1.0",
-  "main": "js/dist/jquery.tokko.js.min.js"
+  "main": "js/dist/jquery.tokko.min.js"
 }

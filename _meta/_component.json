@@ -1,5 +1,5 @@
 {
   "name": "{{ project }}",
   "version": "{{ version }}",
-  "main": "js/dist/{{ project }}.min.js"
+  "main": "js/dist/{{ project_base }}.min.js"
 }

@@ -1,5 +1,5 @@
 {
-    "name": "jquery.tokko.js",
+    "name": "jquery.tokko",
     "version": "0.1.0",
     "private": true,
     "devDependencies": {

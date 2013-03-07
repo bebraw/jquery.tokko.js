@@ -1,5 +1,5 @@
 {
-    "name": "{{ project }}",
+    "name": "{{ project_base }}",
     "version": "{{ version }}",
     "private": true,
     "devDependencies": {
