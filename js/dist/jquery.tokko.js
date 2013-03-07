@@ -1,4 +1,4 @@
-/*! jquery.tokko - v0.1.1 - Juho Vepsalainen - MIT
+/*! jquery.tokko - v0.1.2 - Juho Vepsalainen - MIT
  - 2013-03-07 */
 (function ($) {
     function tokko($parent, opts) {
