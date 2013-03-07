@@ -1,5 +1,8 @@
 {
   "name": "jquery.tokko.js",
   "version": "0.1.1",
-  "main": "js/dist/jquery.tokko.min.js"
+  "main": "js/dist/jquery.tokko.min.js",
+  "dependencies": {
+    "jquery": ">= 1.4.4"
+  }
 }
