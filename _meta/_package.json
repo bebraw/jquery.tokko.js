@@ -1,6 +1,8 @@
 {
     "name": "{{ project_base }}",
     "version": "{{ version }}",
+    "author": "{{ author }}",
+    "license": "{{ license }}",
     "private": true,
     "devDependencies": {
         "grunt": "== 0.4.0",

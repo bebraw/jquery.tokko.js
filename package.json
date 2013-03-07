@@ -1,6 +1,8 @@
 {
     "name": "jquery.tokko",
     "version": "0.1.1",
+    "author": "Juho Vepsalainen",
+    "license": "MIT",
     "private": true,
     "devDependencies": {
         "grunt": "== 0.4.0",
