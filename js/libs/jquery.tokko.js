@@ -62,7 +62,7 @@
     }
 
     function idfy(val) {
-        return val.toLowerCase().replace(/[ \-]/g, '_').replace(/\./g, '');
+        return val.toLowerCase().replace(/[ \-]+/g, '_').replace(/\.+/g, '');
     }
 
     function last(arr) {
