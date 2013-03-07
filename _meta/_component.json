@@ -1,0 +1,5 @@
+{
+  "name": "{{ project }}",
+  "version": "{{ version }}",
+  "main": "js/dist/{{ project }}.min.js"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "libtemplate.js",
+  "version": "0.1.5",
+  "main": "js/dist/libtemplate.js.min.js"
+}
