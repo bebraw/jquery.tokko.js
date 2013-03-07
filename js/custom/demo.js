@@ -1,1 +1,3 @@
-/* implement your demo here */
+$(function() {
+    $('.toc').tokko();
+});

@@ -1,5 +1,5 @@
 (function ($) {
-    function tokko($elem, opts) {
+    function tokko($parent, opts) {
         var $headers = $(':header:not(h1)').map(function() {
             var $e = $(this);
             var depth = parseInt($e.prop('tagName').slice(1), 10);
@@ -11,6 +11,8 @@
 
             initializeAnimation($a);
 
+            // TODO: make sure ids are unique!
+            $e.attr('id', id);
             $e.attr('name', id);
 
             return {
@@ -35,7 +37,7 @@
         initializeAnimation($parent);
 
         function initializeAnimation($e) {
-            if(Modernizr && Modernizr.touch) return;
+            if(window.Modernizr && Modernizr.touch) return;
 
             $e.css('opacity', opts.minAlpha, opts.delay);
 
@@ -60,7 +62,7 @@
     }
 
     function idfy(val) {
-        return val.toLowerCase().replace(/[ \-]/g, '_').replace('.', '');
+        return val.toLowerCase().replace(/[ \-]/g, '_').replace(/\./g, '');
     }
 
     function last(arr) {
@@ -71,8 +73,7 @@
         if(!this.length) return console.error('No element provided to tokko!');
 
         return this.each(function() {
-            var $elem = $(this);
-            yabox($elem, opts(options));
+            tokko($(this), opts(options));
         });
 
         function opts(o) {

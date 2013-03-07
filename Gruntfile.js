@@ -57,6 +57,10 @@ module.exports = function(grunt) {
             }
         },
         regarde: {
+            css: {
+                files: 'css/**/*.css',
+                tasks: ['refresh']
+            },
             js: {
                 files: 'js/**/*.js',
                 tasks: ['refresh']
