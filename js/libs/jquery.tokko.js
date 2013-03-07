@@ -39,13 +39,15 @@
         function initializeAnimation($e) {
             if(window.Modernizr && Modernizr.touch) return;
 
+            var transitionProps = 'opacity ' + opts.duration + 's ' + opts.delay + 's ' + opts.easing;
+
             $e.css({
                 'opacity': opts.minAlpha,
-                '-webkit-transition': 'opacity 0.5s ' + opts.delay + 's linear',
-                '-moz-transition': 'opacity 0.5s ' + opts.delay + 's linear',
-                '-ms-transition': 'opacity 0.5s ' + opts.delay + 's linear',
-                '-o-transition': 'opacity 0.5s ' + opts.delay + 's linear',
-                'transition': 'opacity 0.5s ' + opts.delay + 's linear'
+                '-webkit-transition': transitionProps,
+                '-moz-transition': transitionProps,
+                '-ms-transition': transitionProps,
+                '-o-transition': transitionProps,
+                'transition': transitionProps
             });
 
             $e.on('mouseenter', setOpacity.bind(undefined, $e, opts.maxAlpha)).
@@ -82,6 +84,8 @@
         function opts(o) {
             return $.extend(true, {
                 delay: 0.5,
+                duration: 0.5,
+                easing: 'linear',
                 minAlpha: 0.4,
                 maxAlpha: 1.0,
                 anchor: {
