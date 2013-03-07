@@ -5,4 +5,4 @@ description: "Generates a table of contents and anchors based on document header
 nick: bebraw
 author: Juho Vepsalainen
 license: MIT
-version: 0.1.2
+version: 0.1.3
