@@ -39,19 +39,24 @@
         function initializeAnimation($e) {
             if(window.Modernizr && Modernizr.touch) return;
 
-            $e.css('opacity', opts.minAlpha, opts.delay);
+            var transitionProps = 'opacity ' + opts.duration + 's ' + opts.delay + 's ' + opts.easing;
 
-            $e.on('mouseenter', fadeIn.bind(undefined, $e, opts.maxAlpha, opts.delay)).
-                on('mouseleave', fadeOut.bind(undefined, $e, opts.minAlpha, opts.delay));
+            $e.css({
+                'opacity': opts.minAlpha,
+                '-webkit-transition': transitionProps,
+                '-moz-transition': transitionProps,
+                '-ms-transition': transitionProps,
+                '-o-transition': transitionProps,
+                'transition': transitionProps
+            });
+
+            $e.on('mouseenter', setOpacity.bind(undefined, $e, opts.maxAlpha)).
+                on('mouseleave', setOpacity.bind(undefined, $e, opts.minAlpha));
         }
     }
 
-    function fadeIn($e, val, delay) {
-        $e.stop(true).delay(delay).animate({opacity: val});
-    }
-
-    function fadeOut($e, val, delay) {
-        $e.stop(true).delay(delay).animate({opacity: val});
+    function setOpacity($e, val) {
+        $e.css('opacity', val);
     }
 
     function $li(val, id) {
@@ -62,7 +67,7 @@
     }
 
     function idfy(val) {
-        return val.toLowerCase().replace(/[ \-]/g, '_').replace(/\./g, '');
+        return val.toLowerCase().replace(/[ \-]+/g, '_').replace(/\.+/g, '');
     }
 
     function last(arr) {
@@ -78,7 +83,9 @@
 
         function opts(o) {
             return $.extend(true, {
-                delay: 500,
+                delay: 0.5,
+                duration: 0.5,
+                easing: 'linear',
                 minAlpha: 0.4,
                 maxAlpha: 1.0,
                 anchor: {
