@@ -81,7 +81,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('refresh', ['concat:basic', 'uglify', 'shell:generate_all', 'jekyll:dev']);
+    grunt.registerTask('refresh', ['concat:basic', 'shell:generate_all', 'uglify', 'jekyll:dev']);
     grunt.registerTask('default', ['refresh', 'connect:server', 'livereload-start', 'regarde']);
 
     ['grunt-jekyll',
