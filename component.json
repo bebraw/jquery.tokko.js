@@ -4,5 +4,9 @@
   "main": "js/dist/jquery.tokko.min.js",
   "dependencies": {
     "jquery": ">= 1.4.4"
+  },
+  "devDependencies": {
+    "jquery.localScroll": "git://github.com/flesler/jquery.localScroll.git",
+    "jquery.scrollTo": "1.4.4"
   }
 }
