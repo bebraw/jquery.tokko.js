@@ -8,5 +8,17 @@
   "devDependencies": {
     "jquery.localScroll": "git://github.com/flesler/jquery.localScroll.git",
     "jquery.scrollTo": "1.4.4"
-  }
+  },
+  "ignore": [
+    "Gruntfile.js",
+    "_config.yml",
+    "_layouts/*",
+    "_meta/*",
+    "_site/*",
+    "css/",
+    "index.html/",
+    "js/",
+    "package.json/",
+    "scripts/"
+  ]
 }

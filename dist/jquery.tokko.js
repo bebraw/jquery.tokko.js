@@ -1,5 +1,5 @@
 /*! jquery.tokko - v0.1.3 - Juho Vepsalainen - MIT
- - 2013-03-07 */
+ - 2013-03-09 */
 (function ($) {
     function tokko($parent, opts) {
         var $headers = $(':header:not(h1)').map(function() {
