@@ -12,13 +12,13 @@
   "ignore": [
     "Gruntfile.js",
     "_config.yml",
-    "_layouts/*",
-    "_meta/*",
-    "_site/*",
-    "css/*",
+    "_layouts/",
+    "_meta/",
+    "_site/",
+    "css/",
     "index.html",
-    "js/*",
+    "js/",
     "package.json",
-    "scripts/*"
+    "scripts/"
   ]
 }
