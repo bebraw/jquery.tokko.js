@@ -15,10 +15,10 @@
     "_layouts/*",
     "_meta/*",
     "_site/*",
-    "css/",
-    "index.html/",
-    "js/",
-    "package.json/",
-    "scripts/"
+    "css/*",
+    "index.html",
+    "js/*",
+    "package.json",
+    "scripts/*"
   ]
 }
